@@ -2,12 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 # Create your views here.
-def my_view(request):
+def home(request):
     # http response
-    return render(request, 'home.html')
+    return render(request, 'recipes\pages\home.html', context={'name': 'Jedson'})
 
-def home_view(request):
-    return HttpResponse("<h1>HOME!</h1>")
-
-def sobre_view(request):
-    return HttpResponse("<h1>SOBRE!</h1>")
