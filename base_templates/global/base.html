@@ -1,0 +1,21 @@
+{% include "recipes\partials\head.html" %}
+
+<body>
+  {% include "recipes\partials\header.html" %} <!-- This is the header -->
+  {% include "recipes\partials\search.html" %} <!-- This is the search form -->
+  
+
+  <main class="main-content-container">
+    <div class="main-content main-content-list container">
+
+       {% block content %}{% endblock content %}            
+        
+    
+    </div>    
+  </main>
+  
+  {% include "recipes\partials\footer.html" %} <!-- This is the footer -->
+
+</body>
+</html>
+

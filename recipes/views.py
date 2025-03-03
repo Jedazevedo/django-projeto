@@ -4,5 +4,12 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
     # http response
-    return render(request, 'recipes\pages\home.html', context={'name': 'Jedson'})
+    return render(request, 'recipes\\pages\\home.html', context={'name': 'Jedson'})
+
+def recipe(request, id):
+    # http response
+    return render(request, 'recipes\\pages\\recipe_view.html')
+
+
+
 
