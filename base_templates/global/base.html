@@ -1,5 +1,13 @@
 {% include "recipes\partials\head.html" %}
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+{% include "recipes\partials\head.html" %} <!-- This is the head -->
+<title>{% block title %}{% endblock title%} Recipes </title>
+
+</head>
 <body>
   {% include "recipes\partials\header.html" %} <!-- This is the header -->
   {% include "recipes\partials\search.html" %} <!-- This is the search form -->
